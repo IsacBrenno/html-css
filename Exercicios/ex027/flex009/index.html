@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibe Box</title>
+    <style>
+        div.container{
+            display: flex;
+            background-color: darkgray;
+            flex-flow: row nowrap;
+        }
+
+        div.item{
+            background-color: lightseagreen;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">Outro conteúdo</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">conteúdo um pouco maior</div>
+        <div class="item">F</div>
+        <div class="item">conteúdo maior ainda, que vai ocupar bem mais espaço</div>
+    </div>
+    
+</body>
+</html>

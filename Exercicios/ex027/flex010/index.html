@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibe Box</title>
+    <style>
+        div.container{
+            display: flex;
+            background-color: darkgray;
+            flex-flow: row nowrap;
+            align-items: flex-start;
+
+        }
+
+        div.item{
+            margin-right: 20px;
+            background-color: lightseagreen;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+
+            flex-basis: 150px;
+            align-self: flex-start;
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+    
+</body>
+</html>

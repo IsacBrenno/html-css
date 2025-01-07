@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibe Box</title>
+    <style>
+        div.container{
+            display: flex;
+            background-color: darkgray;
+            flex-flow: row nowrap;
+            align-items: flex-start;
+
+        }
+
+        div.item{
+            margin-right: 20px;
+            background-color: lightseagreen;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+
+            flex-basis: 150px;
+            align-self: flex-start;
+            border-radius: 10px;
+        }
+
+        div#cxa{
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        div#cxb{
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+
+        div#cxc{
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="cxa">A</div>
+        <div class="item" id="cxb">B</div>
+        <div class="item" id="cxc">C</div>
+    </div>
+    
+</body>
+</html>
