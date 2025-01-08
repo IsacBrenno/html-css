@@ -18,23 +18,34 @@ header{
     background-color: grey;
     color: white;
     padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header > h1{
-    border: 1px dotted black;
+    flex: 0 0 200px;
+
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.388);
 }
 
 nav{
-    border: 1px dotted black;
-    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 }
 
-nav > a{
+nav > a {
     background-color: black;
     padding: 10px;
+    margin: 5px;
     color: white;
     text-decoration: none;
-    border-radius: 7px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 nav > a:hover{
